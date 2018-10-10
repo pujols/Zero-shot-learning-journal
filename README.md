@@ -9,3 +9,14 @@ This repository provides codes and data of our papers:
 [3] Soravit Changpinyo*, Wei-Lun Chao*, Boqing Gong, and Fei Sha, ["Synthesized classifiers for zero-shot learning,"](https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Changpinyo_Synthesized_Classifiers_for_CVPR_2016_paper.pdf) CVPR, 2016 
 
 Note that the codes for [3] are largely based on another repository [zero-shot-learning](https://github.com/pujols/zero-shot-learning).
+
+# Installation
+
+
+# Data
+
+
+# Running the codes
+
+
+# Evaluation
