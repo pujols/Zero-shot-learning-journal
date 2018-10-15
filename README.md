@@ -27,7 +27,8 @@ Note that the codes for [3] are largely based on another repository [zero-shot-l
 # Data
 1. For AwA, CUB, and SUN:
 * Download the [googleNet features](https://www.dropbox.com/s/7h1dta59ocdptlu/googleNet_features.zip?dl=0). Unzip and put the three .mat files in the data folder.
-* Download the resnet features and class splits from [Yongqin Xian's website: NS (PS)](http://datasets.d2.mpi-inf.mpg.de/xian/xlsa17.zip), [SS](http://datasets.d2.mpi-inf.mpg.de/xian/standard_split.zip). Unzip and put the xlsa17 and standard_split folders in the data folder. Run data_transfer.m to generate 8 .mat files ended with "_resnet.mat".
+* Download the resnet features and class splits from Yongqin Xian's website: [NS (PS)](http://datasets.d2.mpi-inf.mpg.de/xian/xlsa17.zip) and [SS](http://datasets.d2.mpi-inf.mpg.de/xian/standard_split.zip). Unzip and put the xlsa17 and standard_split folders in the data folder. Run data_transfer.m to generate 8 .mat files ended with "_resnet.mat".
+* You should have 11 .mat files in the data folder.
 
 # Running the codes
 
