@@ -31,6 +31,7 @@ Note that the codes for [3] are largely based on another repository [zero-shot-l
 * You should have 11 .mat files in the data folder. You can delete the xlsa17 and standard_split folders.
 
 # Running the codes
+The codes of SynC is in SynC/codes. The codes of EXEM is in EXEM/codes.
 
-
-# Evaluation
+# GZSL Evaluation
+We provide GZSL Area Under Seen Unseen accuracy Curve (AUSUC) evaluation in misc/Compute_AUSUC.m
