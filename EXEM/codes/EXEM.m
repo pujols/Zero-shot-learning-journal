@@ -9,7 +9,7 @@ function EXEM(task, test_type, dataset, opt, direct_test, feature_name)
 %      opt.gamma: the RBF scale parameter (e.g., 2 .^ (-5 : 5))
 %      opt.pca_d: the PCA dimensionality (e.g., 500)
 %      opt.ind_split: AWA: []; CUB: choose one from 1:4; SUN: choose one from 1:10
-% direct_test: test on a specific [C, nu, gamma, pca_d] pair without cross-validation
+% direct_test: test on a specific [C, nu, gamma, pca_d] without cross-validation
 
 %% Settings
 set_path_EXEM;

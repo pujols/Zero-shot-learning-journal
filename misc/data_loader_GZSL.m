@@ -52,7 +52,7 @@ else
     
 end
 
-if isempty(strfind(dataset, 'SUN'))
+if isempty(strfind(dataset, 'SUN')) && ~strcmp(EXEM_or_not, 'yes')
     attr2 = attr2 / 100;
 end
 

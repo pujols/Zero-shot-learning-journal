@@ -86,13 +86,15 @@ if (strcmp(task, 'val'))
         end
         clear W_record;
     end
-    save(['../SynC_CV_results/SynC_fast_' opt.loss_type '_classCV_' dataset '_split' num2str(opt.ind_split) '_' feature_name '_' norm_method '_' Sim_type '.mat'], 'acc_val', 'opt');
+    save(['../SynC_CV_results/SynC_fast_' opt.loss_type '_classCV_' dataset '_split' num2str(opt.ind_split) '_' feature_name '_' norm_method '_' Sim_type '.mat'],...
+        'acc_val', 'opt');
 end
 
 %% testing
 if (strcmp(task, 'test'))
     if(isempty(direct_test))
-        load(['../SynC_CV_results/SynC_fast_' opt.loss_type '_classCV_' dataset '_split' num2str(opt.ind_split) '_' feature_name '_' norm_method '_' Sim_type '.mat'], 'acc_val', 'opt');
+        load(['../SynC_CV_results/SynC_fast_' opt.loss_type '_classCV_' dataset '_split' num2str(opt.ind_split) '_' feature_name '_' norm_method '_' Sim_type '.mat'],...
+            'acc_val', 'opt');
         [loc_lambda, loc_Sim_scale] = find(acc_val == max(acc_val(:)));
         lambda = opt.lambda(loc_lambda(1)); Sim_scale = opt.Sim_scale(loc_Sim_scale(1));
         disp([loc_lambda(1), loc_Sim_scale(1)])
@@ -108,7 +110,7 @@ if (strcmp(task, 'test'))
         '_lambda' num2str(lambda) '_Sim_scale' num2str(Sim_scale) '.mat'], 'W');
     
     else
-    
+        disp('train a new model!!');
         if (strcmp(opt.loss_type, 'OVO'))
             W = train_W_OVO([], Xtr, Ytr, lambda);
         elseif (strcmp(opt.loss_type, 'CS'))
