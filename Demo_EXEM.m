@@ -40,8 +40,6 @@ disp ('Training w.r.t. to the best hyper-parameters and testing on the unseen cl
 EXEM('test', test_type, datasets{i}, opt, [], feature_type);
 
 disp ('You can also directly train a model and test, given pre-defined parameters');
-cd ..
-cd ..
 % C = 2 ^ -3;
 % nu = 2 ^ 0;
 % gamma = 2 ^ -1;
@@ -61,5 +59,8 @@ cd ..
 % nu = 2 ^ 0;
 % gamma = 2 ^ -1;
 % pca_d = 500;
-% fixed_bias = ;
+% fixed_bias = 0.0;
 % EXEM_GZSL('test', test_type, 'AWA', opt, [C, nu, gamma, pca_d, fixed_bias], feature_type);
+
+cd ..
+cd ..

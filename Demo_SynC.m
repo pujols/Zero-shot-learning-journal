@@ -42,8 +42,6 @@ disp ('Training w.r.t. to the best hyper-parameters and testing on the unseen cl
 SynC_fast('test', datasets{i}, opt, [], feature_type);
 
 disp ('You can also directly train a model and test, given a pair of selected lambda and Sim_scale');
-cd ..
-cd ..
 % lambda = 2 ^ -10;
 % Sim_scale = 2 ^ 0;
 % SynC_fast('test', 'AWA', opt, [lambda, Sim_scale], feature_type);
@@ -68,10 +66,13 @@ cd ..
 % disp ('You can also directly train a model and test, given a pair of selected lambda and Sim_scale');
 % lambda = 2 ^ -10;
 % Sim_scale = 2 ^ 0;
-% fixed_bias = ;
+% fixed_bias = 0.0;
 % SynC_fast_GZSL('test', test_type, 'AWA', opt, [lambda, Sim_scale, fixed_bias], feature_type);
 
 % % You can change 'SynC_fast_GZSL' to 'SynC_fast_EXEM_GZSL'
 % % Note that for opt.loss_type = 'OVO' or 'CS', you don't need to re-do
 % % SynC_fast_EXEM_GZSL('train', test_type, datasets{i}, opt, [], feature_type) but can
 % % directly do SynC_fast_EXEM_GZSL('val', test_type, datasets{i}, opt, [], feature_type)
+
+cd ..
+cd ..
