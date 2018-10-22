@@ -7,7 +7,7 @@
 
 %% SynC_fast Demo for 'AWA'
 datasets = {'AWA', 'CUB', 'SUN', 'AWA1_SS', 'AWA1_PS', 'AWA2_SS', 'AWA2_PS', 'CUB_SS', 'CUB_PS', 'SUN_SS', 'SUN_PS'};
-i = 1;
+i = 5;
 
 %% Path
 cd ./SynC/codes
@@ -42,6 +42,8 @@ disp ('Training w.r.t. to the best hyper-parameters and testing on the unseen cl
 SynC_fast('test', datasets{i}, opt, [], feature_type);
 
 disp ('You can also directly train a model and test, given a pair of selected lambda and Sim_scale');
+cd ..
+cd ..
 % lambda = 2 ^ -10;
 % Sim_scale = 2 ^ 0;
 % SynC_fast('test', 'AWA', opt, [lambda, Sim_scale], feature_type);

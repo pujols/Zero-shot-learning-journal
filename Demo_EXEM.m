@@ -4,7 +4,7 @@
 
 %% EXEM Demo for 'AWA'
 datasets = {'AWA', 'CUB', 'SUN', 'AWA1_SS', 'AWA1_PS', 'AWA2_SS', 'AWA2_PS', 'CUB_SS', 'CUB_PS', 'SUN_SS', 'SUN_PS'};
-i = 1;
+i = 5;
 
 %% Path
 cd ./EXEM/codes
@@ -40,6 +40,8 @@ disp ('Training w.r.t. to the best hyper-parameters and testing on the unseen cl
 EXEM('test', test_type, datasets{i}, opt, [], feature_type);
 
 disp ('You can also directly train a model and test, given pre-defined parameters');
+cd ..
+cd ..
 % C = 2 ^ -3;
 % nu = 2 ^ 0;
 % gamma = 2 ^ -1;
