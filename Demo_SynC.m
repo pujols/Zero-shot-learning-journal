@@ -64,10 +64,10 @@ disp ('You can also directly train a model and test, given a pair of selected la
 % SynC_fast_GZSL('test', test_type, datasets{i}, opt, [], feature_type);
 % 
 % disp ('You can also directly train a model and test, given a pair of selected lambda and Sim_scale');
-% lambda = 2 ^ -10;
-% Sim_scale = 2 ^ 0;
-% fixed_bias = 0.0;
-% SynC_fast_GZSL('test', test_type, 'AWA', opt, [lambda, Sim_scale, fixed_bias], feature_type);
+% % lambda = 2 ^ -10;
+% % Sim_scale = 2 ^ 0;
+% % fixed_bias = 0.0;
+% % SynC_fast_GZSL('test', test_type, 'AWA', opt, [lambda, Sim_scale, fixed_bias], feature_type);
 
 % % You can change 'SynC_fast_GZSL' to 'SynC_fast_EXEM_GZSL'
 % % Note that for opt.loss_type = 'OVO' or 'CS', you don't need to re-do
