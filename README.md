@@ -2,7 +2,7 @@
 
 This repository provides codes and data of our papers:
 
-[1] Soravit Changpinyo, Wei-Lun Chao, and Fei Sha, ["Predicting visual exemplars of unseen classes for zero-shot learning,"](http://openaccess.thecvf.com/content_cvpr_2018/papers/Verma_Generalized_Zero-Shot_Learning_CVPR_2018_paper.pdf) ICCV, 2017
+[1] Soravit Changpinyo, Wei-Lun Chao, and Fei Sha, ["Predicting visual exemplars of unseen classes for zero-shot learning,"](http://openaccess.thecvf.com/content_ICCV_2017/papers/Changpinyo_Predicting_Visual_Exemplars_ICCV_2017_paper.pdf) ICCV, 2017
 
 [2] Wei-Lun Chao*, Soravit Changpinyo*, Boqing Gong, and Fei Sha, ["An empirical study and analysis of generalized zero-shot learning for object recognition in the wild,"](https://arxiv.org/pdf/1605.04253.pdf) ECCV, 2016
 
